@@ -2,7 +2,7 @@ package com.olatoye.daramola.utils.config;
 
 import com.olatoye.daramola.model.dto.ExchangeRateResponseDto;
 import com.olatoye.daramola.model.entity.ExchangeRate;
-import com.olatoye.daramola.utils.exception.ExchangeRateNotMappedException;
+import com.olatoye.daramola.utils.exception.exchangeRateExceptions.ExchangeRateNotMappedException;
 import org.springframework.stereotype.Component;
 
 @Component

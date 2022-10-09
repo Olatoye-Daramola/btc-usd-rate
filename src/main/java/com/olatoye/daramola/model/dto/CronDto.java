@@ -2,25 +2,32 @@ package com.olatoye.daramola.model.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.jetbrains.annotations.NotNull;
 
 @Getter
 @Setter
 public class CronDto {
 
-    private int seconds;
-    private int minutes;
-    private int hours;
-    private int dayOfMonth;
-    private int month;
-    private int dayOfWeek;
+    @NotNull
+    private String seconds;
+    @NotNull
+    private String minutes;
+    @NotNull
+    private String hours;
+    @NotNull
+    private String dayOfMonth;
+    @NotNull
+    private String month;
+    @NotNull
+    private String dayOfWeek;
 
-    public CronDto(int seconds, int minutes, int hours, int dayOfMonth, int month, int dayOfWeek) {
-        this.seconds = seconds;
-        this.minutes = minutes;
-        this.hours = hours;
-        this.dayOfMonth = dayOfMonth;
-        this.month = month;
-        this.dayOfWeek = dayOfWeek;
+    public CronDto() {
+        this.seconds = "*";
+        this.minutes = "5";
+        this.hours = "*";
+        this.dayOfMonth = "*";
+        this.month = "*";
+        this.dayOfWeek = "*";
     }
 
     @Override

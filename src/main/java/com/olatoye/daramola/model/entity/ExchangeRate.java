@@ -21,7 +21,7 @@ public class ExchangeRate {
 
     @Id
     private String id;
-    private BigDecimal btcValue = BigDecimal.valueOf(1);
+    private BigDecimal btcValue;
     private BigDecimal usdValue;
     private LocalDateTime dateCreated;
 }

@@ -1,4 +1,4 @@
-package com.olatoye.daramola.utils.exception;
+package com.olatoye.daramola.utils.exception.exchangeRateExceptions;
 
 public class ExchangeRateException extends RuntimeException {
     public ExchangeRateException(String message) {

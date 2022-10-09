@@ -3,8 +3,7 @@ spring:
     active: dev
   data:
     mongodb:
-      host: ${DB_HOST}
       port: ${DB_PORT}
-      database: ${DB_DATABASE}
-      username: ${DB_USERNAME}
-      password: ${DB_PASSWORD}
+      uri: mongodb://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}?authSource=admin
+
+cronValue: ${CRON_EXPRESSION}
