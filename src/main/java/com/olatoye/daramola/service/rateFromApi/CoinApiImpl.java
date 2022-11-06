@@ -86,7 +86,7 @@ public class CoinApiImpl implements RateExtractorService {
         return ExchangeRate.builder()
                 .btcValue(BigDecimal.valueOf(1))
                 .usdValue(usdRate)
-                .dateCreated(LocalDateTime.parse(dateCreated.split("\\.")[0]))
+                .dateCreated(LocalDateTime.parse(dateCreated.split("\\.")[0])) // yyyy:mm:dd hh:mm:ss.ZZZZ
                 .build();
     }
 

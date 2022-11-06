@@ -1,4 +1,4 @@
-package com.olatoye.daramola.controller;
+package com.olatoye.daramola.web.controller;
 
 import com.olatoye.daramola.model.dto.ExchangeRateResponseDto;
 import com.olatoye.daramola.service.exchangeRate.ExchangeRateService;

@@ -22,8 +22,8 @@ public class CronDto {
     private String dayOfWeek;
 
     public CronDto() {
-        this.seconds = "*";
-        this.minutes = "5";
+        this.seconds = "0";
+        this.minutes = "0/10";
         this.hours = "*";
         this.dayOfMonth = "*";
         this.month = "*";

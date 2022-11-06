@@ -9,6 +9,6 @@ import java.util.Optional;
 
 public interface ExchangeRateRepository extends MongoRepository<ExchangeRate, String> {
     Optional<ExchangeRate> findByDateCreated(LocalDateTime dateCreated);
-    ExchangeRate findTopByOrderByDateCreatedDesc();
-    List<ExchangeRate> findByDateCreatedBetween(LocalDateTime from, LocalDateTime to);
+//    ExchangeRate findTopByOrderByDateCreatedDesc();
+//    List<ExchangeRate> findByDateCreatedBetween(LocalDateTime from, LocalDateTime to);
 }
